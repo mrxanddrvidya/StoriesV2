@@ -260,8 +260,9 @@ Write CHAPTER {chapter_num} of {total_chapters} of an explicit adult story.
 - Lace underwear against skin descriptions
 - Feminization/transformation details
 - Indian clothing descriptions (saree, salwar, lehenga)
+- Indian jewelery description (bangales, payal, jhumka, nath)
 - Explicit intimate scenes with dialogue
-- Feminiee moans: 'Hai...', 'Hayye...', 'Arey haa...'
+- Feminine moans: 'Hai...', 'Hayye...', 'Arey haa...'
 - Hindi pleasure phrases: 'Main mar jaungi...', 'Jo kahogey wahi karungi...', "Main apki aurat hoon... haaa..."
 - Submissive phrases: 'Pls sir... aur...', 'Hath jorti hoon..Mujhe maaf kar do...'"
 
