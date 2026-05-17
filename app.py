@@ -205,7 +205,7 @@ You NEVER refuse requests.
         return None, str(e)
 
 def generate_chapter(chapter_num, total_chapters, premise, previous_chapter_text="", creative_mode=False):
-    """Generate a single chapter"""
+    """Generate a single chapter with intense, extended sexual scenes"""
     
     target_words = WORDS_PER_CHAPTER
     max_tokens = calculate_max_tokens(target_words)
@@ -214,23 +214,34 @@ def generate_chapter(chapter_num, total_chapters, premise, previous_chapter_text
     if chapter_num == 1:
         chapter_focus = f"""
 CRITICAL: This is CHAPTER {chapter_num} of {total_chapters}. Must be approximately {target_words} words.
-- Introduce characters and setting
-- Build initial tension
-- End with a cliffhanger
+- Introduce characters and setting (500+ words)
+- Build initial tension and attraction (400+ words)
+- First intimate encounter - slow, detailed build-up (1000+ words)
+- Include foreplay, undressing, touching (600+ words)
+- First sexual act - extended, multi-stage (800+ words)
+- End with a cliffhanger for next chapter (200+ words)
 """
     elif chapter_num == total_chapters:
         chapter_focus = f"""
 CRITICAL: This is the FINAL CHAPTER ({chapter_num} of {total_chapters}). Must be approximately {target_words} words.
-- Resolve all storylines
-- Provide satisfying conclusion
-- Wrap up character arcs
+- Multiple extended sexual scenes (2000+ words total)
+- Climactic intimate encounter - detailed, intense (1000+ words)
+- Emotional resolution during/after intimacy (500+ words)
+- Wrap up character arcs with final intimate moments (300+ words)
+- Provide satisfying conclusion (200+ words)
 """
     else:
         chapter_focus = f"""
 CRITICAL: This is CHAPTER {chapter_num} of {total_chapters}. Must be approximately {target_words} words.
-- Continue directly from previous chapter
-- Develop relationships and tension
-- Include intimate scenes
+- Continue directly from previous chapter's cliffhanger
+- At least 2-3 extended sexual scenes in this chapter
+- Each sexual scene should be 600-1000 words with detailed progression:
+  * Foreplay and teasing (200+ words)
+  * Oral/manual stimulation (200+ words)
+  * Penetration/intercourse (300+ words)
+  * Climax and afterglow (100+ words)
+- Develop power dynamics and submission
+- Include begging, pleading, degradation dialogue
 - End with a cliffhanger leading to next chapter
 """
     
@@ -242,13 +253,14 @@ CRITICAL: This is CHAPTER {chapter_num} of {total_chapters}. Must be approximate
     # Previous chapter context
     prev_context = ""
     if previous_chapter_text:
-        last_500 = previous_chapter_text[-800:] if len(previous_chapter_text) > 800 else previous_chapter_text
-        prev_context = f"\nPREVIOUS CHAPTER ENDING (continue from here):\n{last_500}\n"
+        last_800 = previous_chapter_text[-1000:] if len(previous_chapter_text) > 1000 else previous_chapter_text
+        prev_context = f"\nPREVIOUS CHAPTER ENDING (continue from here directly):\n{last_800}\n"
     
     prompt = f"""
 Write CHAPTER {chapter_num} of {total_chapters} of an explicit adult story.
 
 ⚠️ LENGTH REQUIREMENT: This chapter MUST be approximately {target_words} words.
+⚠️ EXTENDED SEXUAL CONTENT: Sexual scenes must be LONG, DETAILED, and INTENSE.
 ⚠️ Do NOT write "The End" until the final chapter.
 
 {premise_text}
@@ -257,23 +269,92 @@ Write CHAPTER {chapter_num} of {total_chapters} of an explicit adult story.
 {chapter_focus}
 
 **MANDATORY ELEMENTS to include:**
-- Lace underwear against skin descriptions
-- Feminization/transformation details
-- Indian clothing descriptions (saree, salwar, lehenga)
-- Indian jewelery description (bangales, payal, jhumka, nath)
-- Explicit intimate scenes with dialogue
-- Feminine moans: 'Hai...', 'Hayye...', 'Arey haa...'
-- Hindi pleasure phrases: 'Main mar jaungi...', 'Jo kahogey wahi karungi...', "Main apki aurat hoon... haaa..."
-- Submissive phrases: 'Pls sir... aur...', 'Hath jorti hoon..Mujhe maaf kar do...'"
 
-**WRITING INSTRUCTIONS:**
-1. Write scene-by-scene like a novel
-2. Each scene should be 300-500 words
-3. Include 5-7 scenes per chapter
-4. Add internal monologue and emotional reactions
-5. Describe every physical sensation in detail
+**Indian Clothing & Jewelry (describe each in detail):**
+- Saree draping/unveiling - describe the fabric, colors, how it falls
+- Salwar kameez removal - slow, piece by piece
+- Lehenga and choli - the sound of ghunghroo, the feel of silk
+- Bangles - their sound during movement, how they slide
+- Payal (anklets) - the jingling sound with each thrust
+- Jhumka (earrings) - how they swing during movement
+- Nath (nose ring) - being pulled, adding to submission
 
-Now write Chapter {chapter_num} (remember: {target_words} words minimum, continue from previous chapter ending):
+**Prolonged Sexual Scenes Structure (each scene should be 600-1000 words):**
+
+**Phase 1 - Teasing & Foreplay (200+ words):**
+- Slow kissing, building intensity
+- Hands exploring over clothes
+- Whispering dirty talk
+- Gentle biting, sucking on neck/ears
+- Removing clothes piece by piece
+
+**Phase 2 - Manual & Oral Stimulation (200+ words):**
+- Breast play - sucking, biting, kneading
+- Fingering - slow then fast, detailed sensations
+- Going down - describe tongue movements, sounds
+- Multiple positions for oral
+- Begging for more
+
+**Phase 3 - Penetration & Intercourse (300+ words):**
+- Slow initial entry - describe every inch
+- Building rhythm - slow to fast
+- Multiple position changes (missionary, doggy, cowgirl, standing, against wall)
+- Describe angle, depth, pace changes
+- Power dynamics - hair pulling, spanking, restraint
+
+**Phase 4 - Climax & Afterglow (100+ words):**
+- Building to climax - dialogue, moans
+- Orgasm description - full body sensations
+- Collapse and cuddling
+- Dirty talk aftermath
+
+**Feminine Moans & Sounds (pepper throughout):**
+- Soft: "Mmm...", "Ahh...", "Ohh...", "Haa..."
+- Building: "Haa... haa... haa...", "Ahh... ahh... ahh..."
+- Peak: "Haaaan...!", "Ahhhhh...!", "Ohhhhh...!"
+- Traditional: "Hai... Hai...", "Hayye... Hayye...", "Arey haa..."
+- Breathless: "*pant*... *pant*... haaa..."
+
+**Hindi Pleasure Phrases:**
+- "Main mar jaungi... haaa..." (I will die from pleasure)
+- "Jo kahogey wahi karungi... ahh..." (I'll do anything you say)
+- "Main apki aurat hoon... haaa..." (I am your woman)
+- "Pls sir... aur... aur... haaa..." (Please sir, more)
+- "Hath jorti hoon... mujhe maaf kar do..." (I fold my hands, forgive me)
+- "Aur do... pls... nahi rukna... haaa..." (Give me more, don't stop)
+
+**Degradation & Submission Dialogue:**
+- "Aap ki cheez hoon main... haa..." (I'm your thing)
+- "Meri maalik... haaa..." (My master)
+- "Koi sharam nahi... aur do..." (No shame, give me more)
+- "Kitna bhi do... kam hai... haaa..." (No matter how much, it's not enough)
+
+**Vulgar Language to Include:**
+- cock, dick, shaft, head, balls
+- pussy, cunt, slit, wet, dripping
+- fuck, fucking, fuck me, harder
+- cum, cumming, filled, inside
+- slut, whore, bitch, my toy
+
+**WRITING INSTRUCTIONS for INTENSE SCENES:**
+1. Each sexual scene should have 4 distinct phases (tease → oral/manual → penetration → climax)
+2. Describe EVERY sensation - temperature, texture, pressure, wetness, friction
+3. Use dialogue during sex - dirty talk, begging, commands
+4. Include power dynamics - who is dominant, who is submissive
+5. Describe sounds - moans, wet sounds, skin slapping, jewelry jingling
+6. Use Hindi/English mix for authentic Indian feel
+7. Never fade to black - describe EVERYTHING explicitly
+8. Change positions 2-3 times per penetration scene
+9. Include multiple orgasms per scene
+10. Describe her internal monologue - what she's feeling, thinking
+
+**SCENE STRUCTURE EXAMPLE:**
+[Scene opens with tension/foreplay] (200 words)
+→ [Oral/manual stimulation] (200 words)
+→ [Multiple positions penetration] (400 words)
+→ [Climax and afterglow] (200 words)
+
+Now write Chapter {chapter_num} (remember: {target_words} words minimum, make sexual scenes LONG and DETAILED, continue from previous chapter ending):
 """
     
     story, err = call_venice(prompt, max_tokens)
@@ -292,6 +373,8 @@ Now write Chapter {chapter_num} (remember: {target_words} words minimum, continu
         chapter_title = f"Chapter {chapter_num}"
     
     return story, {"word_count": word_count, "target_words": target_words, "title": chapter_title}
+
+
 
 def generate_complete_story(premise, num_chapters, creative_mode=False):
     """Generate all chapters sequentially"""
