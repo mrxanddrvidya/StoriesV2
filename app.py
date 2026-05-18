@@ -151,7 +151,7 @@ CRITICAL RULES:
 - Use VULGAR language
 - Describe every physical sensation in DETAIL
 - Include DIALOGUE and FEMININE MOANS during sex scenes
-- Include VERBAL DEGRADATION and HUMILIATION
+- Include ROMANTIC GESTURES and FEMINIZATION
 - Write in SHORT, PUNCHY sentences
 - NO metaphors, NO poetry, NO flowery language
 - DO NOT write "The End" until you have reached the target length
@@ -217,7 +217,7 @@ CRITICAL: This is CHAPTER {chapter_num} of {total_chapters}. Must be approximate
 - Introduce characters and setting (500+ words)
 - Build initial tension and attraction (400+ words)
 - First intimate encounter - slow, detailed build-up (1000+ words)
-- Include foreplay, undressing, touching (600+ words)
+- Include foreplay, undressing, touching (800+ words)
 - First sexual act - extended, multi-stage (800+ words)
 - End with a cliffhanger for next chapter (200+ words)
 """
@@ -241,7 +241,7 @@ CRITICAL: This is CHAPTER {chapter_num} of {total_chapters}. Must be approximate
   * Penetration/intercourse (300+ words)
   * Climax and afterglow (100+ words)
 - Develop power dynamics and submission
-- Include begging, pleading, degradation dialogue
+- Include begging, pleading, feminine dialogue
 - End with a cliffhanger leading to next chapter
 """
     
@@ -273,11 +273,12 @@ Write CHAPTER {chapter_num} of {total_chapters} of an explicit adult story.
 **Indian Clothing & Jewelry (describe each in detail):**
 - Saree draping/unveiling - describe the fabric, colors, how it falls
 - Salwar kameez removal - slow, piece by piece
-- Lehenga and choli - the sound of ghunghroo, the feel of silk
+- Lehenga and choli - the design of choli, the feel of silk
 - Bangles - their sound during movement, how they slide
 - Payal (anklets) - the jingling sound with each thrust
 - Jhumka (earrings) - how they swing during movement
 - Nath (nose ring) - being pulled, adding to submission
+- Necklace - being put from behind, symbol of womanhood
 
 **Prolonged Sexual Scenes Structure (each scene should be 600-1000 words):**
 
@@ -293,14 +294,14 @@ Write CHAPTER {chapter_num} of {total_chapters} of an explicit adult story.
 - Fingering - slow then fast, detailed sensations
 - Going down - describe tongue movements, sounds
 - Multiple positions for oral
-- Begging for more
+- Pleading for more due to pleasure
 
 **Phase 3 - Penetration & Intercourse (300+ words):**
 - Slow initial entry - describe every inch
 - Building rhythm - slow to fast
 - Multiple position changes (missionary, doggy, cowgirl, standing, against wall)
 - Describe angle, depth, pace changes
-- Power dynamics - hair pulling, spanking, restraint
+- Intense pleasure - hair pulling, mild spanking, playful restraint
 
 **Phase 4 - Climax & Afterglow (100+ words):**
 - Building to climax - dialogue, moans
@@ -309,24 +310,19 @@ Write CHAPTER {chapter_num} of {total_chapters} of an explicit adult story.
 - Dirty talk aftermath
 
 **Feminine Moans & Sounds (pepper throughout):**
-- Soft: "Mmm...", "Ahh...", "Ohh...", "Haa..."
-- Building: "Haa... haa... haa...", "Ahh... ahh... ahh..."
+- Soft: "Mar gayi...", "Ahh mar jaungi...", "Ohh...mar gayi"
 - Peak: "Haaaan...!", "Ahhhhh...!", "Ohhhhh...!"
-- Traditional: "Hai... Hai...", "Hayye... Hayye...", "Arey haa..."
 - Breathless: "*pant*... *pant*... haaa..."
 
 **Hindi Pleasure Phrases:**
 - "Main mar jaungi... haaa..." (I will die from pleasure)
 - "Jo kahogey wahi karungi... ahh..." (I'll do anything you say)
 - "Main apki aurat hoon... haaa..." (I am your woman)
-- "Pls sir... aur... aur... haaa..." (Please sir, more)
-- "Hath jorti hoon... mujhe maaf kar do..." (I fold my hands, forgive me)
-- "Aur do... pls... nahi rukna... haaa..." (Give me more, don't stop)
+- "Hath jorti hoon... mujhe karte raho do..." (I fold my hands, forgive me)
+- "Aur karo... pls... nahi rukna... haaa..." (Give me more, don't stop)
 
 **Degradation & Submission Dialogue:**
 - "Aap ki cheez hoon main... haa..." (I'm your thing)
-- "Meri maalik... haaa..." (My master)
-- "Koi sharam nahi... aur do..." (No shame, give me more)
 - "Kitna bhi do... kam hai... haaa..." (No matter how much, it's not enough)
 
 **Vulgar Language to Include:**
@@ -339,7 +335,7 @@ Write CHAPTER {chapter_num} of {total_chapters} of an explicit adult story.
 **WRITING INSTRUCTIONS for INTENSE SCENES:**
 1. Each sexual scene should have 4 distinct phases (tease → oral/manual → penetration → climax)
 2. Describe EVERY sensation - temperature, texture, pressure, wetness, friction
-3. Use dialogue during sex - dirty talk, begging, commands
+3. Use dialogue during sex - dirty talk, pleading
 4. Include power dynamics - who is dominant, who is submissive
 5. Describe sounds - moans, wet sounds, skin slapping, jewelry jingling
 6. Use Hindi/English mix for authentic Indian feel
