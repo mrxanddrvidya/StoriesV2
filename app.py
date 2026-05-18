@@ -279,6 +279,7 @@ Write CHAPTER {chapter_num} of {total_chapters} of an explicit adult story.
 - Jhumka (earrings) - how they swing during movement
 - Nath (nose ring) - being pulled, adding to submission
 - Necklace - being put from behind, symbol of womanhood
+- Feminine shoes - sandals, high heels
 
 **Prolonged Sexual Scenes Structure (each scene should be 600-1000 words):**
 
