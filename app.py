@@ -47,20 +47,59 @@ if not check_login():
 
 # ------------------- Text Cleaning Functions -------------------
 def clean_text_for_tts(text):
-    text = re.sub(r'\*\*([^*]+)\*\*', r'\1', text)
-    text = re.sub(r'\*([^*]+)\*', r'\1', text)
-    text = re.sub(r'__([^_]+)__', r'\1', text)
-    text = re.sub(r'_([^_]+)_', r'\1', text)
-    text = re.sub(r'^#+\s+', '', text, flags=re.MULTILINE)
+    """Enhanced cleaning for TTS - removes ALL markdown and special characters"""
+    # Remove markdown bold and italic
+    text = re.sub(r'\*\*([^*]+)\*\*', r'\1', text)  # **bold**
+    text = re.sub(r'\*([^*]+)\*', r'\1', text)      # *italic*
+    text = re.sub(r'__([^_]+)__', r'\1', text)      # __bold__
+    text = re.sub(r'_([^_]+)_', r'\1', text)        # _italic_
+    
+    # Remove markdown headers (##, ###, etc.)
+    text = re.sub(r'^#{1,6}\s+', '', text, flags=re.MULTILINE)
+    
+    # Remove standalone # symbols (not part of words)
+    text = re.sub(r'(?<!\w)#(?!\w)', '', text)
+    
+    # Remove standalone * symbols (not part of words)
+    text = re.sub(r'(?<!\w)\*(?!\w)', '', text)
+    
+    # Remove markdown links [text](url) -> text
     text = re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', text)
+    
+    # Remove code blocks and inline code
     text = re.sub(r'```[\s\S]*?```', '', text)
     text = re.sub(r'`([^`]+)`', r'\1', text)
+    
+    # Remove HTML tags
     text = re.sub(r'<[^>]+>', '', text)
+    
+    # Remove horizontal rules
+    text = re.sub(r'^-{3,}$', '', text, flags=re.MULTILINE)
+    text = re.sub(r'^\*{3,}$', '', text, flags=re.MULTILINE)
+    
+    # Remove extra newlines (more than 2)
     text = re.sub(r'\n{3,}', '\n\n', text)
+    
+    # Remove multiple spaces
     text = re.sub(r' +', ' ', text)
+    
+    # Remove bullet points
+    text = re.sub(r'^\*\s+', '', text, flags=re.MULTILINE)
+    text = re.sub(r'^\d+\.\s+', '', text, flags=re.MULTILINE)
+    text = re.sub(r'^-\s+', '', text, flags=re.MULTILINE)
+    
+    # Remove any remaining special characters that TTS might read
+    text = re.sub(r'[#~`>|\\]', '', text)
+    
+    # Remove standalone punctuation that might be artifacts
+    text = re.sub(r'\s+[*_#]\s+', ' ', text)
+    
+    # Clean up spaces around punctuation
+    text = re.sub(r'\s+([.,!?;:])', r'\1', text)
+    
     text = text.strip()
     return text
-
+    
 def clean_text_for_display(text):
     text = re.sub(r'\*\*([^*]+)\*\*', r'\1', text)
     text = re.sub(r'\*([^*]+)\*', r'\1', text)
