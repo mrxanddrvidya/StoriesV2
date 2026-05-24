@@ -419,6 +419,7 @@ Focus on {flavor['transformation_type']} as part of the feminization journey.
 - Whispering dirty talk
 - Gentle biting, sucking on neck/ears
 - Removing clothes piece by piece
+- Mandatory to wear bangles and anklet all the time
 
 **Phase 2 - Manual & Oral Stimulation (200+ words):**
 - Breast play - sucking, biting, kneading
@@ -426,6 +427,8 @@ Focus on {flavor['transformation_type']} as part of the feminization journey.
 - Going down - describe tongue movements, sounds
 - Multiple positions for oral
 - Pleading for more due to pleasure
+- Mandatory to wear bangles and anklet all the time, punish if not wearing
+- Reapply lipstick before blowjob
 
 **Phase 3 - Penetration & Intercourse (300+ words):**
 - Slow initial entry - describe every inch
@@ -433,6 +436,8 @@ Focus on {flavor['transformation_type']} as part of the feminization journey.
 - Multiple position changes (missionary, doggy, cowgirl, standing, against wall)
 - Describe angle, depth, pace changes
 - Intense pleasure - hair pulling, mild spanking, playful restraint
+- Mandatory to wear bangles and anklet all the time, long blow jobs if found not wearing
+- Reapply lipstick before blowjob
 
 **Phase 4 - Climax & Afterglow (100+ words):**
 - Building to climax - dialogue, moans
@@ -443,7 +448,6 @@ Focus on {flavor['transformation_type']} as part of the feminization journey.
 **Feminine Moans & Sounds (pepper throughout):**
 - Soft: "Mar gayi...", "Ahh mar jaungi...", "Ohh...mar gayi"
 - Peak: "Haaaan...!", "Ahhhhh...!", "Ohhhhh...!"
-- Breathless: "*pant*... *pant*... haaa..."
 - {flavor['mood']} specific expressions
 
 **Hindi Pleasure Phrases:**
