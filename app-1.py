@@ -763,6 +763,14 @@ st.session_state.creative_mode = creative_mode
 st.markdown("---")
 st.subheader("🎲 Story Variation")
 
+# Initialize variation session state if not exists
+if "use_random_flavor" not in st.session_state:
+    st.session_state.use_random_flavor = True
+if "variation_number" not in st.session_state:
+    st.session_state.variation_number = 42
+if "current_story_flavor" not in st.session_state:
+    st.session_state.current_story_flavor = None
+
 col_var1, col_var2 = st.columns(2)
 with col_var1:
     use_random = st.checkbox("Random Variation", value=st.session_state.use_random_flavor)
@@ -780,4 +788,427 @@ with col_var1:
             "transformation_type": STORY_FLAVORS["transformation_type"][variation_num % len(STORY_FLAVORS["transformation_type"])],
             "character_trait": STORY_FLAVORS["character_trait"][variation_num % len(STORY_FLAVORS["character_trait"])]
         }
-    else
+
+with col_var2:
+    if use_random:
+        # Generate new random flavor
+        random.seed()  # Use system time as seed
+        st.session_state.current_story_flavor = get_random_flavor()
+        st.caption(f"🎲 Fresh random flavor generated")
+    
+    # Display current flavor
+    if st.session_state.current_story_flavor:
+        flavor = st.session_state.current_story_flavor
+        st.info(f"🎨 **Current Flavor:**\n"
+                f"• Mood: {flavor['mood']}\n"
+                f"• Setting: {flavor['setting']}\n"
+                f"• Dynamic: {flavor['power_dynamic']}\n"
+                f"• Trait: {flavor['character_trait']}\n"
+                f"• Transformation: {flavor['transformation_type']}")
+    
+    # Refresh flavor button
+    if st.button("🔄 New Random Flavor", use_container_width=True):
+        st.session_state.current_story_flavor = get_random_flavor()
+        st.rerun()
+
+if creative_mode:
+    st.info("✨ Creative Mode ON - No premise needed. Click Generate Story.")
+    premise = ""
+else:
+    premise = st.text_area(
+        "Enter a story premise here",
+        height=80,
+        placeholder="Enter your story premise here..."
+    )
+
+if premise or creative_mode:
+    total_words = num_chapters * WORDS_PER_CHAPTER
+    est_cost = (total_words * 1.3 / 1_000_000) * 0.25
+    st.caption(f"💰 Estimated cost: **${est_cost:.5f}**")
+    
+    # Show variation cost info
+    if not use_random:
+        st.caption(f"🔒 Fixed variation #{st.session_state.variation_number} - same flavor each time")
+    else:
+        st.caption(f"🎲 Random variation - different flavor each generation")
+
+# Generate Story Button
+if st.button("✨ Generate Story", type="primary", use_container_width=True, 
+             disabled=st.session_state.is_generating):
+    if not creative_mode and not premise.strip():
+        st.warning("Please enter a story premise or enable Creative Mode.")
+    else:
+        st.session_state.is_generating = True
+        st.session_state.chapters = []
+        st.session_state.chapter_titles = []
+        st.session_state.chapter_filenames = []
+        st.session_state.recovery_content = ""
+        
+        # Generate fresh random flavor if in random mode
+        if use_random:
+            st.session_state.current_story_flavor = get_random_flavor()
+        
+        try:
+            full_story, stats = generate_complete_story(premise, num_chapters, creative_mode)
+            
+            if full_story:
+                st.session_state.chapters = stats["chapters"]
+                st.session_state.chapter_titles = stats["chapter_titles"]
+                st.session_state.story_title = stats["story_title"]
+                st.session_state.combined_story_text = full_story
+                
+                # Initialize custom filenames with default chapter titles
+                st.session_state.chapter_filenames = [
+                    f"Chapter_{i+1}_{stats['chapter_titles'][i][:30]}" 
+                    for i in range(len(stats['chapters']))
+                ]
+                
+                total_words = stats["total_words"]
+                target_words = stats["target_words"]
+                percentage = int((total_words / target_words) * 100)
+                
+                if total_words < target_words:
+                    st.warning(f"⚠️ Story complete: {total_words:,} / {target_words:,} words ({percentage}%)")
+                else:
+                    st.success(f"✅ Story complete! {total_words:,} / {target_words:,} words ({percentage}%)")
+                
+                # Show used flavor in success message
+                flavor = st.session_state.current_story_flavor
+                st.success(f"🎨 Used flavor: {flavor['mood']} | {flavor['setting']} | {flavor['power_dynamic']}")
+                st.info(f"📧 TEXT emails sent for all {len(stats['chapters'])} chapters")
+                st.rerun()
+            else:
+                st.error(f"❌ Story generation failed: {stats}")
+                
+        except Exception as e:
+            st.error(f"❌ Error: {str(e)}")
+        finally:
+            st.session_state.is_generating = False
+
+# Display generated chapters
+if st.session_state.chapters:
+    st.subheader("📖 Generated Story")
+    
+    # Show the flavor used for this story
+    if st.session_state.current_story_flavor:
+        flavor = st.session_state.current_story_flavor
+        with st.expander("🎨 Story Flavor Used", expanded=False):
+            st.write(f"**Mood:** {flavor['mood']}")
+            st.write(f"**Setting:** {flavor['setting']}")
+            st.write(f"**Power Dynamic:** {flavor['power_dynamic']}")
+            st.write(f"**Character Trait:** {flavor['character_trait']}")
+            st.write(f"**Transformation Focus:** {flavor['transformation_type']}")
+    
+    # Overall stats
+    total_words = sum(len(ch.split()) for ch in st.session_state.chapters)
+    target_total = len(st.session_state.chapters) * WORDS_PER_CHAPTER
+    percentage = int((total_words / target_total) * 100)
+    st.caption(f"📊 Total: {total_words:,} / {target_total:,} words ({percentage}%) across {len(st.session_state.chapters)} chapter(s)")
+    
+    # Download full story
+    safe_title = re.sub(r'[<>:"/\\|?*]', '', st.session_state.story_title.replace(' ', '_'))[:50]
+    
+    col_dl1, col_dl2, col_dl3 = st.columns(3)
+    with col_dl1:
+        st.download_button(
+            "💾 Download Complete Story (TXT)",
+            data=st.session_state.combined_story_text,
+            file_name=f"{safe_title}_{len(st.session_state.chapters)}chapters.txt",
+            use_container_width=True
+        )
+    
+    with col_dl2:
+        # Send combined story email button
+        if st.button("📧 Send Combined Story as Text File", use_container_width=True):
+            with st.spinner("Sending combined story email..."):
+                success, msg = send_combined_story_email(
+                    st.session_state.combined_story_text,
+                    st.session_state.story_title,
+                    len(st.session_state.chapters)
+                )
+                if success:
+                    st.success("✅ Combined story sent to email!")
+                else:
+                    st.error(f"❌ Failed to send: {msg}")
+    
+    with col_dl3:
+        # MP3 Generation Mode Selection
+        mp3_mode = st.radio(
+            "MP3 Generation Mode",
+            ["Sequential", "Parallel"],
+            horizontal=True,
+            key="mp3_mode"
+        )
+    
+    # Filename customization section
+    st.markdown("---")
+    st.subheader("🎵 MP3 Filename Customization")
+    st.info("Edit the filenames below for your MP3 files before generating them:")
+    
+    custom_filenames = []
+    for idx, (chapter, default_name) in enumerate(zip(st.session_state.chapters, st.session_state.chapter_filenames), 1):
+        col1, col2 = st.columns([3, 1])
+        with col1:
+            new_name = st.text_input(
+                f"Chapter {idx} Filename",
+                value=default_name,
+                key=f"filename_{idx}",
+                help="Filename without extension. Will be sanitized automatically."
+            )
+            custom_filenames.append(new_name)
+        with col2:
+            st.caption(f"Words: {len(chapter.split()):,}")
+    
+    # Update session state with custom filenames
+    st.session_state.chapter_filenames = custom_filenames
+    
+    # MP3 Generation Button Section
+    st.markdown("---")
+    col_mp3_gen1, col_mp3_gen2, col_mp3_gen3 = st.columns([1, 1, 1])
+    
+    with col_mp3_gen1:
+        # Generate ALL MP3s button
+        if st.button("🎵 Generate & Send ALL MP3s", type="primary", use_container_width=True):
+            # Prepare chapter data for MP3 generation
+            chapter_data_list = []
+            for idx, (chapter, title, custom_name) in enumerate(zip(
+                st.session_state.chapters, 
+                st.session_state.chapter_titles,
+                st.session_state.chapter_filenames
+            ), 1):
+                email_title = f"{st.session_state.story_title} (Chapter {idx} of {len(st.session_state.chapters)})"
+                chapter_data_list.append({
+                    'content': chapter,
+                    'title': email_title,
+                    'num': idx,
+                    'custom_filename': custom_name if custom_name.strip() else None
+                })
+            
+            if mp3_mode == "Parallel":
+                st.info(f"🚀 Generating {len(chapter_data_list)} MP3s in parallel...")
+                progress_placeholder = st.empty()
+                
+                def update_progress(chapter_num, success):
+                    status = "✅" if success else "❌"
+                    progress_placeholder.write(f"{status} Chapter {chapter_num} MP3 generation complete")
+                
+                results = generate_mp3_parallel(chapter_data_list, st.session_state.tts_voice, update_progress)
+                
+                success_count = sum(1 for r in results if r['success'])
+                st.success(f"✅ Generated {success_count}/{len(results)} MP3s successfully!")
+                
+                # Show failures if any
+                failures = [r for r in results if not r['success']]
+                if failures:
+                    with st.expander("❌ Failed MP3 Generations"):
+                        for failure in failures:
+                            st.write(f"Chapter {failure['chapter']}: {failure['message']}")
+            else:
+                # Sequential mode
+                progress_bar = st.progress(0, text="Generating MP3s sequentially...")
+                success_count = 0
+                
+                for idx, chapter_data in enumerate(chapter_data_list, 1):
+                    progress_bar.progress(idx / len(chapter_data_list), 
+                                         text=f"Generating MP3 for Chapter {idx}...")
+                    
+                    with st.spinner(f"Generating MP3 for Chapter {idx}..."):
+                        success, msg = generate_and_send_mp3(
+                            chapter_data['content'],
+                            chapter_data['title'],
+                            chapter_data['num'],
+                            st.session_state.tts_voice,
+                            chapter_data['custom_filename']
+                        )
+                        if success:
+                            st.success(f"✅ Chapter {idx} MP3 sent to email!")
+                            success_count += 1
+                        else:
+                            st.error(f"❌ Chapter {idx} MP3 failed: {msg}")
+                    
+                    time.sleep(0.5)
+                
+                progress_bar.empty()
+                st.success(f"✅ Generated {success_count}/{len(chapter_data_list)} MP3s successfully!")
+    
+    with col_mp3_gen2:
+        # Generate individual MP3 buttons
+        st.markdown("**Individual Chapter MP3**")
+        for idx in range(len(st.session_state.chapters)):
+            if st.button(f"🔊 Chapter {idx+1} MP3", key=f"mp3_btn_all_{idx}"):
+                with st.spinner(f"Generating MP3 for Chapter {idx+1}..."):
+                    email_title = f"{st.session_state.story_title} (Chapter {idx+1} of {len(st.session_state.chapters)})"
+                    custom_name = st.session_state.chapter_filenames[idx] if st.session_state.chapter_filenames else None
+                    success, msg = generate_and_send_mp3(
+                        st.session_state.chapters[idx],
+                        email_title,
+                        idx+1,
+                        st.session_state.tts_voice,
+                        custom_name
+                    )
+                    if success:
+                        st.success(f"🎵 Chapter {idx+1} MP3 sent to email!")
+                    else:
+                        st.error(f"❌ Chapter {idx+1} MP3 failed: {msg}")
+    
+    with col_mp3_gen3:
+        # Generate New Variation button
+        if st.button("🎲 Generate New Variation", use_container_width=True):
+            # Generate new random flavor
+            st.session_state.current_story_flavor = get_random_flavor()
+            # Clear current story
+            st.session_state.chapters = []
+            st.session_state.chapter_titles = []
+            st.session_state.chapter_filenames = []
+            st.session_state.story_title = ""
+            st.session_state.combined_story_text = ""
+            st.rerun()
+    
+    # Display each chapter with details
+    st.markdown("---")
+    st.subheader("📑 Chapter Previews")
+    
+    for idx, (chapter, title) in enumerate(zip(st.session_state.chapters, st.session_state.chapter_titles), 1):
+        with st.expander(f"Chapter {idx}: {title[:50]}... ({len(chapter.split()):,} words)"):
+            # Show chapter preview
+            display_chapter = clean_text_for_display(chapter)
+            if len(display_chapter) > 1000:
+                st.write(display_chapter[:1000])
+                st.caption("(Chapter truncated. Download full story above.)")
+            else:
+                st.write(display_chapter)
+            
+            # Individual MP3 button for this chapter
+            if st.button(f"🔊 Generate MP3 for Chapter {idx}", key=f"mp3_btn_display_{idx}"):
+                with st.spinner(f"Generating MP3 for Chapter {idx}..."):
+                    email_title = f"{st.session_state.story_title} (Chapter {idx} of {len(st.session_state.chapters)})"
+                    custom_name = st.session_state.chapter_filenames[idx-1] if st.session_state.chapter_filenames else None
+                    success, msg = generate_and_send_mp3(
+                        chapter,
+                        email_title,
+                        idx,
+                        st.session_state.tts_voice,
+                        custom_name
+                    )
+                    if success:
+                        st.success(f"🎵 Chapter {idx} MP3 sent to email!")
+                    else:
+                        st.error(f"❌ Chapter {idx} MP3 failed: {msg}")
+            
+            st.caption(f"Custom filename: {st.session_state.chapter_filenames[idx-1] if st.session_state.chapter_filenames else title[:30]}")
+    
+    # Clear button
+    col_clear1, col_clear2 = st.columns(2)
+    with col_clear1:
+        if st.button("🆕 Clear All", use_container_width=True):
+            st.session_state.chapters = []
+            st.session_state.chapter_titles = []
+            st.session_state.chapter_filenames = []
+            st.session_state.story_title = ""
+            st.session_state.recovery_content = ""
+            st.session_state.combined_story_text = ""
+            st.rerun()
+    
+    with col_clear2:
+        if st.button("🎲 New Random Story", use_container_width=True):
+            # Generate new random flavor and clear
+            st.session_state.current_story_flavor = get_random_flavor()
+            st.session_state.chapters = []
+            st.session_state.chapter_titles = []
+            st.session_state.chapter_filenames = []
+            st.session_state.story_title = ""
+            st.session_state.combined_story_text = ""
+            st.rerun()
+
+# ------------------- Sidebar -------------------
+with st.sidebar:
+    st.header("⚙️ Settings")
+    st.caption(f"🤖 Model: **GLM-4-7B**")
+    st.caption(f"📏 Per chapter: **{WORDS_PER_CHAPTER:,} words**")
+    st.caption(f"📚 Max chapters: **5**")
+    st.markdown("---")
+    
+    st.subheader("🎤 Voice Settings")
+    selected_voice = st.selectbox(
+        "Select Voice",
+        options=list(EDGE_FEMALE_VOICES.keys()),
+        format_func=lambda x: EDGE_FEMALE_VOICES[x],
+        index=0
+    )
+    st.session_state.tts_voice = selected_voice
+    st.markdown("---")
+    
+    if st.button("🔑 Test API", use_container_width=True):
+        with st.spinner("Testing..."):
+            api_key = os.getenv("VENICE_API_KEY")
+            if api_key:
+                st.success("✅ API Key present")
+            else:
+                st.error("❌ VENICE_API_KEY missing")
+                st.info("Add VENICE_API_KEY in Secrets")
+    
+    st.markdown("---")
+    
+    # Show current flavor in sidebar
+    if st.session_state.current_story_flavor:
+        st.subheader("🎨 Current Flavor")
+        flavor = st.session_state.current_story_flavor
+        st.write(f"**Mood:** {flavor['mood']}")
+        st.write(f"**Setting:** {flavor['setting']}")
+        st.write(f"**Dynamic:** {flavor['power_dynamic']}")
+        st.write(f"**Trait:** {flavor['character_trait']}")
+        st.write(f"**Transformation:** {flavor['transformation_type']}")
+        
+        if st.button("🔄 Refresh Flavor", use_container_width=True):
+            st.session_state.current_story_flavor = get_random_flavor()
+            st.rerun()
+        st.markdown("---")
+    
+    # Recovery Section
+    st.subheader("🔄 Recovery")
+    
+    if st.session_state.recovery_content:
+        st.warning(f"📝 Recovered: {len(st.session_state.recovery_content)} chars")
+        
+        col1, col2 = st.columns(2)
+        with col1:
+            if st.button("📧 Email Text", use_container_width=True):
+                with st.spinner("Sending..."):
+                    success, msg = send_email(
+                        st.session_state.recovery_content,
+                        "Recovered Story",
+                        1,
+                        mp3_path=None
+                    )
+                    if success:
+                        st.success("Sent!")
+                    else:
+                        st.error(f"Failed: {msg[:100]}")
+        with col2:
+            if st.button("🔊 MP3", use_container_width=True):
+                with st.spinner("Generating MP3..."):
+                    success, msg = generate_and_send_mp3(
+                        st.session_state.recovery_content,
+                        "Recovered Story",
+                        1,
+                        st.session_state.tts_voice
+                    )
+                    if success:
+                        st.success("MP3 sent!")
+                    else:
+                        st.error(f"Failed: {msg[:100]}")
+        
+        if st.button("🗑️ Clear Recovery", use_container_width=True):
+            st.session_state.recovery_content = ""
+            st.rerun()
+    else:
+        st.info("No recovered content")
+    
+    st.markdown("---")
+    st.caption("💡 **How it works:**")
+    st.caption("1. Select Random or Fixed Variation")
+    st.caption("2. Generate story → TEXT emails sent")
+    st.caption("3. Customize MP3 filenames")
+    st.caption("4. Generate MP3s (Sequential or Parallel)")
+    st.caption("5. Try 'Generate New Variation' for different flavor")
+    st.caption("6. Use Recovery if API times out")
