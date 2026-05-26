@@ -429,6 +429,7 @@ Focus on {flavor['transformation_type']} as part of the feminization journey.
 - Pleading for more due to pleasure
 - Mandatory to wear bangles and anklet all the time, punish if not wearing
 - Reapply lipstick before blowjob
+- Nailpolish must match lipstick while giving blowjob
 
 **Phase 3 - Penetration & Intercourse (300+ words):**
 - Slow initial entry - describe every inch
@@ -438,6 +439,7 @@ Focus on {flavor['transformation_type']} as part of the feminization journey.
 - Intense pleasure - hair pulling, mild spanking, playful restraint
 - Mandatory to wear bangles and anklet all the time, long blow jobs if found not wearing
 - Reapply lipstick before blowjob
+- Nailpolish on hand and toe nails must match lipstick while giving blowjob
 
 **Phase 4 - Climax & Afterglow (100+ words):**
 - Building to climax - dialogue, moans
@@ -447,13 +449,14 @@ Focus on {flavor['transformation_type']} as part of the feminization journey.
 
 **Feminine Moans & Sounds (pepper throughout):**
 - Soft: "Mar gayi...", "Ahh mar jaungi...", "Ohh...mar gayi"
-- Peak: "Haaaan...!", "Ahhhhh...!", "Ohhhhh...!"
 - {flavor['mood']} specific expressions
 
 **Hindi Pleasure Phrases:**
 - "Main mar jaungi... haaa..." (I will die from pleasure)
 - "Jo kahogey wahi karungi... ahh..." (I'll do anything you say)
-- "Main apki aurat hoon... haaa..." (I am your woman)
+- "Mujehe puri tarah se aurat bana do... haaa..." (Make me a complete woman)
+- "Meri chusion ko daba daba ke bara kar dijeye..." (Make my breasts bigger by sqeezing them)
+- "Main apki biwi hoon... mera chusiyaa dabaoo..." (I am your wife, sqeeze my breasts)
 - "Hath jorti hoon... mujhe karte raho..." (I fold my hands, keep doing it to me)
 - "Aur karo... pls... nahi rukna... haaa..." (Give me more, don't stop)
 
