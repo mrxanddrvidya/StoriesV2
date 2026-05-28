@@ -309,6 +309,7 @@ Write CHAPTER {chapter_num} of {total_chapters} of an explicit adult story.
 
 **MANDATORY ELEMENTS to include:**
 
+
 **Indian Clothing & Jewelry (describe each in detail):**
 - Saree draping/unveiling - describe the fabric, colors, how it falls
 - Salwar kameez removal - slow, piece by piece
@@ -320,6 +321,71 @@ Write CHAPTER {chapter_num} of {total_chapters} of an explicit adult story.
 - Necklace - being put from behind, symbol of womanhood
 - Feminine shoes - sandals, high heels
 
+**FEMINIZATION VARIATIONS (choose based on story flavor):**
+
+**Voluntary Feminization - Eager & Willing:**
+- Character willingly accepts feminine clothing, asks for more
+- Expresses joy, excitement, natural comfort in femininity
+- "I've always wanted this... haaa... please..."
+- Actively participates in saree draping, makeup application
+- Describes feeling "right" or "complete" when dressed feminine
+
+**Voluntary Feminization - Curious & Experimenting:**
+- Hesitant but intrigued, "Just this once..."
+- Surprised by own pleasure in femininity
+- Gradual acceptance across chapters
+- "I didn't know it would feel like this... haa..."
+
+**Voluntary Feminization - Liberated & Empowered:**
+- Finds strength and confidence in femininity
+- Embraces transformation as self-discovery
+- "I feel beautiful... haaa... more like myself..."
+- Takes initiative in clothing choices, intimate moments
+
+**Involuntary Feminization - Resistant then Surrendering:**
+- Initial resistance, denial, shame
+- Physical pleasure overrides mental resistance
+- Body betrays them - "Haa... no... haaa... don't stop..."
+- Progressive surrender across sexual scenes
+- Internal conflict described in detail - mind says no, body says yes
+
+**Involuntary Feminization - Forced/Coerced (Power Dynamic):**
+- Dominant partner insists, commands, persuades
+- Character dressed against initial will
+- "I hate this... ahh... why does it feel good... haaa..."
+- Power exchange during intimate moments
+- Submission through feminization
+
+**Involuntary Feminization - Blackmailed/Manipulated:**
+- Secrets used to compel feminization
+- Reluctant participation turning to reluctant pleasure
+- "You wouldn't... haaa... please... ahh..."
+- Complex emotions - shame, fear, unwanted pleasure
+
+**Involuntary Feminization - Hypnotic/Drugged Suggestion:**
+- Altered state of consciousness
+- Waking up dressed femininely with foggy memories
+- "What did you do to me... haaa... why can't I stop..."
+- Dreamlike sequences mixed with explicit intimacy
+
+**Involuntary Feminization - Accidental/Unintended:**
+- Started as joke, dare, or game
+- Unexpected arousal from feminization
+- "This was supposed to be a bet... haaa... I can't..."
+- Surprise at own response
+
+**Involuntary Feminization - Punishment Becoming Pleasure:**
+- Feminization as correction or discipline
+- Physical pleasure transforms meaning of punishment
+- "Punish me more... haaa... please..."
+- Blurring lines between pain, humiliation, and pleasure
+
+**Mixed Feminization - Both Partners Transforming:**
+- Both characters exploring feminization together
+- Mutual dressing, mutual discovery
+- Shared vulnerability and intimacy
+- "We're both beautiful... haaa... together..."
+
 **Prolonged Sexual Scenes Structure (each scene should be 600-1000 words):**
 
 **Phase 1 - Teasing & Foreplay (200+ words):**
@@ -328,6 +394,7 @@ Write CHAPTER {chapter_num} of {total_chapters} of an explicit adult story.
 - Whispering dirty talk
 - Gentle biting, sucking on neck/ears
 - Removing clothes piece by piece
+- *Feminization moment: touching lace/silk/lingerie for first time*
 
 **Phase 2 - Manual & Oral Stimulation (200+ words):**
 - Breast play - sucking, biting, kneading
@@ -335,6 +402,7 @@ Write CHAPTER {chapter_num} of {total_chapters} of an explicit adult story.
 - Going down - describe tongue movements, sounds
 - Multiple positions for oral
 - Pleading for more due to pleasure
+- *Feminization moment: moaning while touching feminine clothing*
 
 **Phase 3 - Penetration & Intercourse (300+ words):**
 - Slow initial entry - describe every inch
@@ -342,28 +410,34 @@ Write CHAPTER {chapter_num} of {total_chapters} of an explicit adult story.
 - Multiple position changes (missionary, doggy, cowgirl, standing, against wall)
 - Describe angle, depth, pace changes
 - Intense pleasure - hair pulling, mild spanking, playful restraint
+- *Feminization moment: saree/skirt lifting, jewelry sounds during thrusts*
 
 **Phase 4 - Climax & Afterglow (100+ words):**
 - Building to climax - dialogue, moans
 - Orgasm description - full body sensations
 - Collapse and cuddling
 - Dirty talk aftermath
+- *Feminization moment: acceptance or continued resistance dialogue*
 
 **Feminine Moans & Sounds (pepper throughout):**
 - Soft: "Mar gayi...", "Ahh mar jaungi...", "Ohh...mar gayi"
 - Peak: "Haaaan...!", "Ahhhhh...!", "Ohhhhh...!"
-- Breathless: "*pant*... *pant*... haaa..."
 
 **Hindi Pleasure Phrases:**
-- "Main mar jaungi... haaa..." (I will die from pleasure)
-- "Jo kahogey wahi karungi... ahh..." (I'll do anything you say)
-- "Main apki aurat hoon... haaa..." (I am your woman)
-- "Hath jorti hoon... mujhe karte raho do..." (I fold my hands, forgive me)
+- Voluntary: "Main mar jaungi... haaa... karo... karo..."
+- Involuntary: "Nahi... ruko... haaa... nahi rukna... ahh..."
+- "Jo kahogey wahi karungi... ahh..." (voluntary surrender)
+- "Kya kar rahe ho mujhe... haaa..." (What are you doing to me - involuntary)
+- "Main apki aurat hoon... haaa..." (I am your woman - accepting)
+- "Mujhe nahi hona tha... haaa... ho raha hai..." (I didn't want this... it's happening - conflicted)
+- "Hath jorti hoon... haaa... aur do..." (I fold my hands - begging)
 - "Aur karo... pls... nahi rukna... haaa..." (Give me more, don't stop)
 
 **Degradation & Submission Dialogue:**
-- "Aap ki cheez hoon main... haa..." (I'm your thing)
-- "Kitna bhi do... kam hai... haaa..." (No matter how much, it's not enough)
+- "Aap ki cheez hoon main... haa..." (I'm your thing - submissive)
+- "Mujhe bigaad do... aur... haaa..." (Corrupt me more - surrendering)
+- "Main kya ban rahi hoon... haaa..." (What am I becoming - conflicted)
+- "Kitna bhi do... kam hai... haaa..." (No matter how much, not enough)
 
 **Vulgar Language to Include:**
 - cock, dick, shaft, head, balls
@@ -372,25 +446,63 @@ Write CHAPTER {chapter_num} of {total_chapters} of an explicit adult story.
 - cum, cumming, filled, inside
 - slut, whore, bitch, my toy
 
-**WRITING INSTRUCTIONS for INTENSE SCENES:**
-1. Each sexual scene should have 4 distinct phases (tease → oral/manual → penetration → climax)
-2. Describe EVERY sensation - temperature, texture, pressure, wetness, friction
-3. Use dialogue during sex - dirty talk, pleading
-4. Include power dynamics - who is dominant, who is submissive
-5. Describe sounds - moans, wet sounds, skin slapping, jewelry jingling
-6. Use Hindi/English mix for authentic Indian feel
-7. Never fade to black - describe EVERYTHING explicitly
-8. Change positions 2-3 times per penetration scene
-9. Include multiple orgasms per scene
-10. Describe her internal monologue - what she's feeling, thinking
+**WRITING INSTRUCTIONS for INTENSE SCENES with FEMINIZATION VARIETY:**
 
-**SCENE STRUCTURE EXAMPLE:**
-[Scene opens with tension/foreplay] (200 words)
-→ [Oral/manual stimulation] (200 words)
-→ [Multiple positions penetration] (400 words)
-→ [Climax and afterglow] (200 words)
+1. **Feminization Arc:** Choose ONE feminization type from the variations above based on the story flavor and character trait. Maintain consistency across chapters.
 
-Now write Chapter {chapter_num} (remember: {target_words} words minimum, make sexual scenes LONG and DETAILED, continue from previous chapter ending):
+2. **Internal Monologue:** For involuntary feminization, show the conflict between mental resistance and physical pleasure. "My mind says stop... my body says haaa... more..."
+
+3. **Dialogue Differences:**
+   - Voluntary: "Yes... haaa... dress me... make me yours..."
+   - Involuntary: "No... haaa... why does this feel good... don't stop..."
+
+4. **Physical Response vs Mental State:** Describe the contradiction - trembling hands reaching for silk while protesting, hips moving forward while saying no.
+
+5. **Each sexual scene should have 4 distinct phases with feminization integration:**
+   - Phase 1 - Tease: Introduce/acknowledge feminine clothing
+   - Phase 2 - Oral/Manual: Touch feminine items during intimacy
+   - Phase 3 - Penetration: Clothing sounds, jewelry movement
+   - Phase 4 - Afterglow: Acceptance dialogue or continued resistance
+
+6. **Describe EVERY sensation** - fabric texture on skin, temperature, pressure, wetness, friction, plus emotional response to feminization
+
+7. **Use dialogue during sex** - dirty talk, pleading, resistance crumbling to surrender
+
+8. **Include power dynamics** - who controls the feminization (self, partner, circumstance)
+
+9. **Describe sounds** - moans, wet sounds, skin slapping, bangles jingling, payal chiming
+
+10. **Use Hindi/English mix** for authentic Indian feel, especially during moments of surrender or resistance
+
+11. **Never fade to black** - describe EVERYTHING explicitly, including the emotional journey of feminization
+
+12. **Change positions 2-3 times** per penetration scene, each position highlighting different clothing/jewelry
+
+13. **Include multiple orgasms** per scene, with varying intensity as feminization acceptance grows
+
+14. **Describe internal monologue** - what she's feeling, thinking, the battle or acceptance happening inside
+
+15. **Progressive transformation** - across chapters, show the journey from wherever the feminization type starts to wherever it ends
+
+**FEMINIZATION PROGRESSION EXAMPLE BY CHAPTER:**
+
+**Chapter 1:** Introduction to feminization - first touch of lace/silk, initial resistance or curiosity
+**Chapter 2:** Deeper involvement - wearing feminine items during intimacy, first moans of conflicted pleasure
+**Chapter 3:** Acceptance phase - verbal surrender, asking for more feminine items
+**Chapter 4:** Embodiment - internalizing femininity, initiating while dressed
+**Chapter 5:** Integration - feminization is complete, fully surrendered or fully embraced
+
+**SCENE STRUCTURE EXAMPLE with FEMINIZATION:**
+[Scene opens: Character sees/feels feminine clothing] (150 words)
+→ [Resistance/internal conflict or eager acceptance] (100 words)
+→ [Foreplay while wearing/removing feminine items] (200 words)
+→ [Oral/manual stimulation with clothing sounds] (200 words)
+→ [Penetration - multiple positions, jewelry sounds] (400 words)
+→ [Climax with surrender or embracing dialogue] (150 words)
+→ [Afterglow - acceptance or continued resistance] (100 words)
+
+Now write Chapter {chapter_num} (remember: {target_words} words minimum, make sexual scenes LONG and DETAILED with the chosen feminization style, continue from previous chapter ending):
+
 """
     
     story, err = call_venice(prompt, max_tokens)
