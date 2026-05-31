@@ -253,10 +253,10 @@ def generate_chapter(chapter_num, total_chapters, premise, previous_chapter_text
     if chapter_num == 1:
         chapter_focus = f"""
 CRITICAL: This is CHAPTER {chapter_num} of {total_chapters}. Must be approximately {target_words} words.
-- Introduce characters and setting (500+ words)
+- Introduce characters and setting (300+ words)
 - Build initial tension and attraction (400+ words)
 - First intimate encounter - slow, detailed build-up (1000+ words)
-- Include foreplay, undressing, touching (800+ words)
+- Include foreplay, undressing, touching (1000+ words)
 - First sexual act - extended, multi-stage (800+ words)
 - End with a cliffhanger for next chapter (200+ words)
 """
@@ -264,8 +264,8 @@ CRITICAL: This is CHAPTER {chapter_num} of {total_chapters}. Must be approximate
         chapter_focus = f"""
 CRITICAL: This is the FINAL CHAPTER ({chapter_num} of {total_chapters}). Must be approximately {target_words} words.
 - Multiple extended sexual scenes (2000+ words total)
-- Climactic intimate encounter - detailed, intense (1000+ words)
-- Emotional resolution during/after intimacy (500+ words)
+- Climactic intimate encounter - detailed, intense (1300+ words)
+- Emotional resolution during/after intimacy (300+ words)
 - Wrap up character arcs with final intimate moments (300+ words)
 - Provide satisfying conclusion (200+ words)
 """
@@ -274,10 +274,10 @@ CRITICAL: This is the FINAL CHAPTER ({chapter_num} of {total_chapters}). Must be
 CRITICAL: This is CHAPTER {chapter_num} of {total_chapters}. Must be approximately {target_words} words.
 - Continue directly from previous chapter's cliffhanger
 - At least 2-3 extended sexual scenes in this chapter
-- Each sexual scene should be 600-1000 words with detailed progression:
-  * Foreplay and teasing (200+ words)
-  * Oral/manual stimulation (200+ words)
-  * Penetration/intercourse (300+ words)
+- Each sexual scene should be 900-1200 words with detailed progression:
+  * Foreplay and teasing (500+ words)
+  * Oral/manual stimulation (500+ words)
+  * Penetration/intercourse (500+ words)
   * Climax and afterglow (100+ words)
 - Develop power dynamics and submission
 - Include begging, pleading, feminine dialogue
@@ -320,6 +320,7 @@ Write CHAPTER {chapter_num} of {total_chapters} of an explicit adult story.
 - Nath (nose ring) - being pulled, adding to submission
 - Necklace - being put from behind, symbol of womanhood
 - Feminine shoes - sandals, high heels
+- Lipstick and Nailpolish - Alawys 
 
 **FEMINIZATION VARIATIONS (choose based on story flavor):**
 
@@ -496,6 +497,7 @@ Write CHAPTER {chapter_num} of {total_chapters} of an explicit adult story.
 [Scene opens: Character sees/feels feminine clothing] (150 words)
 → [Resistance/internal conflict or eager acceptance] (100 words)
 → [Foreplay while wearing/removing feminine items] (200 words)
+→ [Makeup wearing feminine items lipstick nailpolish] (200 words)
 → [Oral/manual stimulation with clothing sounds] (200 words)
 → [Penetration - multiple positions, jewelry sounds] (400 words)
 → [Climax with surrender or embracing dialogue] (150 words)
